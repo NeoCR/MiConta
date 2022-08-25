@@ -1,7 +1,5 @@
 package com.jvinteractivecr.miconta.models;
 
-import java.util.Date;
-
 /**
  * Created by NeoCR
  * 21/8/2022
@@ -9,8 +7,8 @@ import java.util.Date;
 public class PaymentModel {
 
     private int id;
-    private Date creationDate;
-    private Date paymentDate;
+    private String creationDate;
+    private String paymentDate;
 
     public int getId() {
         return id;
@@ -20,19 +18,19 @@ public class PaymentModel {
         this.id = id;
     }
 
-    public Date getCreationDate() {
+    public String getCreationDate() {
         return creationDate;
     }
 
-    public void setCreationDate(Date creationDate) {
+    public void setCreationDate(String creationDate) {
         this.creationDate = creationDate;
     }
 
-    public Date getPaymentDate() {
+    public String getPaymentDate() {
         return paymentDate;
     }
 
-    public void setPaymentDate(Date paymentDate) {
+    public void setPaymentDate(String paymentDate) {
         this.paymentDate = paymentDate;
     }
 }

@@ -1,8 +1,5 @@
 package com.jvinteractivecr.miconta.models;
 
-import java.math.BigDecimal;
-import java.util.Date;
-
 /**
  * Created by NeoCR
  * 21/8/2022
@@ -12,8 +9,8 @@ public class PaymentDetailModel {
     private int id;
     private int paymentId;
     private String egress;
-    private BigDecimal amount;
-    private Date paymentDate;
+    private Double amount;
+    private String paymentDate;
 
     public int getId() {
         return id;
@@ -39,19 +36,19 @@ public class PaymentDetailModel {
         this.egress = egress;
     }
 
-    public BigDecimal getAmount() {
+    public Double getAmount() {
         return amount;
     }
 
-    public void setAmount(BigDecimal amount) {
+    public void setAmount(Double amount) {
         this.amount = amount;
     }
 
-    public Date getPaymentDate() {
+    public String getPaymentDate() {
         return paymentDate;
     }
 
-    public void setPaymentDate(Date paymentDate) {
+    public void setPaymentDate(String paymentDate) {
         this.paymentDate = paymentDate;
     }
 }

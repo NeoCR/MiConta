@@ -1,7 +1,5 @@
 package com.jvinteractivecr.miconta.models;
 
-import java.math.BigDecimal;
-
 /**
  * Created by NeoCR
  * 21/8/2022
@@ -11,7 +9,7 @@ public class IncomeModel {
     private int id;
     private String income;
     private int currencyId;
-    private BigDecimal amount;
+    private Double amount;
     private boolean applySocialCharges;
 
     public int getId() {
@@ -38,11 +36,11 @@ public class IncomeModel {
         this.currencyId = currencyId;
     }
 
-    public BigDecimal getAmount() {
+    public Double getAmount() {
         return amount;
     }
 
-    public void setAmount(BigDecimal amount) {
+    public void setAmount(Double amount) {
         this.amount = amount;
     }
 

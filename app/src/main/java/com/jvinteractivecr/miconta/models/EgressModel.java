@@ -1,7 +1,5 @@
 package com.jvinteractivecr.miconta.models;
 
-import java.math.BigDecimal;
-
 /**
  * Created by NeoCR
  * 21/8/2022
@@ -10,7 +8,7 @@ public class EgressModel {
     private int id;
     private String egress; // Nombre o detalle del egreso
     private int currencyId;
-    private BigDecimal amount;
+    private Double amount;
     private int payrollPeriodId;
 
     public int getId() {
@@ -37,11 +35,11 @@ public class EgressModel {
         this.currencyId = currencyId;
     }
 
-    public BigDecimal getAmount() {
+    public Double getAmount() {
         return amount;
     }
 
-    public void setAmount(BigDecimal amount) {
+    public void setAmount(Double amount) {
         this.amount = amount;
     }
 
