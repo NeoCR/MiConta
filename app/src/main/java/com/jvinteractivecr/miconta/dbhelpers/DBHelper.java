@@ -101,9 +101,9 @@ public class DBHelper extends SQLiteOpenHelper {
 
         cv.put(Constants.COLUMN_ID, 1);
         cv.put(Constants.TER_COL_DATE, Utils.getToday());
-        cv.put(Constants.TER_COL_BUY, 0);
-        cv.put(Constants.TER_COL_SELL, 0);
-        db.insert(Constants.TABLE_CURRENCIES, null, cv);
+        cv.put(Constants.TER_COL_BUY, 1);
+        cv.put(Constants.TER_COL_SELL, 1);
+        db.insert(Constants.TABLE_EXCHANGE_RATE, null, cv);
     }
 
     private void income(SQLiteDatabase db)
