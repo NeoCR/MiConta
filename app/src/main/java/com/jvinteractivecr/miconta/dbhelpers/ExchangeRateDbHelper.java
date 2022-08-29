@@ -30,9 +30,10 @@ public class ExchangeRateDbHelper extends DBHelper {
         Cursor cursor = db.rawQuery(sql, null);
 
         if (cursor.moveToFirst()){
-            exchangeRateModel.setExchangeRateDate(cursor.getString(0));
-            exchangeRateModel.setBuy(cursor.getDouble(1));
-            exchangeRateModel.setSell(cursor.getDouble(2));
+            exchangeRateModel.setId(cursor.getInt(0));
+            exchangeRateModel.setExchangeRateDate(cursor.getString(1));
+            exchangeRateModel.setBuy(cursor.getDouble(2));
+            exchangeRateModel.setSell(cursor.getDouble(3));
         }
 
         cursor.close();
@@ -41,12 +42,12 @@ public class ExchangeRateDbHelper extends DBHelper {
         return exchangeRateModel;
     }
 
-    private void updateExchangeRate(ExchangeRateModel exchangeRateModel)
+    public void updateExchangeRate(ExchangeRateModel exchangeRateModel)
     {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
 
-        cv.put(Constants.TER_COL_DATE, Utils.getToday());
+        cv.put(Constants.TER_COL_DATE, exchangeRateModel.getExchangeRateDate());
         cv.put(Constants.TER_COL_BUY, exchangeRateModel.getBuy());
         cv.put(Constants.TER_COL_SELL, exchangeRateModel.getSell());
         db.update(Constants.TABLE_EXCHANGE_RATE, cv, Constants.COLUMN_ID + " = 1", null);
