@@ -22,4 +22,24 @@
         android:name="com.jvinteractivecr.miconta.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_egress"
+        android:name="com.jvinteractivecr.miconta.ui.egress.EgressFragment"
+        android:label="@string/menu_egress"
+        tools:layout="@layout/fragment_egress" />
+    <fragment
+        android:id="@+id/nav_exchange_rate"
+        android:name="com.jvinteractivecr.miconta.ui.exchangerate.ExchangeRateFragment"
+        android:label="@string/menu_exchange_rate"
+        tools:layout="@layout/fragment_exchange_rate" />
+    <fragment
+        android:id="@+id/nav_income"
+        android:name="com.jvinteractivecr.miconta.ui.income.IncomeFragment"
+        android:label="@string/menu_income"
+        tools:layout="@layout/fragment_income" />
+    <fragment
+        android:id="@+id/nav_payment"
+        android:name="com.jvinteractivecr.miconta.ui.payment.PaymentFragment"
+        android:label="@string/menu_payment"
+        tools:layout="@layout/fragment_payment" />
 </navigation>

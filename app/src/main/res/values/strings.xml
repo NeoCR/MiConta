@@ -10,4 +10,11 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+
+    <string name="menu_income">Ingresos</string>
+    <string name="menu_egress">Egresos</string>
+    <string name="menu_payment">Pagos</string>
+    <string name="menu_exchange_rate">Tipo de Cambio</string>
+
+    <string name="btn_save">Guardar</string>
 </resources>

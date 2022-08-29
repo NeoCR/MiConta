@@ -16,5 +16,25 @@
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/menu_slideshow" />
+
+        <item
+            android:id="@+id/nav_income"
+            android:icon="@drawable/ic_baseline_add_business_24"
+            android:title="@string/menu_income" />
+
+        <item
+            android:id="@+id/nav_egress"
+            android:icon="@drawable/ic_baseline_exit_to_app_24"
+            android:title="@string/menu_egress" />
+
+        <item
+            android:id="@+id/nav_payment"
+            android:icon="@drawable/ic_baseline_payments_24"
+            android:title="@string/menu_payment" />
+
+        <item
+            android:id="@+id/nav_exchange_rate"
+            android:icon="@drawable/ic_baseline_currency_exchange_24"
+            android:title="@string/menu_exchange_rate" />
     </group>
 </menu>
